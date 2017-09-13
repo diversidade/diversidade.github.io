@@ -1,32 +1,56 @@
-<header class="site-header" role="banner">
-
-  <div class="wrapper">
-    {% assign default_paths = site.pages | map: "path" %}
-    {% assign page_paths = site.header_pages | default: default_paths %}
-    <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-
-    {% if page_paths %}
-      <nav class="site-nav">
-        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger">
-          <span class="menu-icon">
-            <svg viewBox="0 0 18 15" width="18px" height="15px">
-              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-            </svg>
-          </span>
-        </label>
-
-        <div class="trigger">
-          {% for path in page_paths %}
-            {% assign my_page = site.pages | where: "path", path | first %}
-            {% if my_page.title %}
-            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-            {% endif %}
-          {% endfor %}
-        </div>
-      </nav>
+<!DOCTYPE HTML>
+<!--
+    Alpha by HTML5 UP
+    html5up.net | @n33co
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 300 | escape }}">
+        <meta name="keywords" content="diversidade, tecnologia" />
+            <!--[if lte IE 8]><script src="{{ site.baseurl }}/assets/css/ie/html5shiv.js"></script><![endif]-->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.dropotron/1.4.3/jquery.dropotron.min.js"></script>
+        <!--
+     -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/skel/1.0.0/skel.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/skel-layers/1.0.4/skel-layers.min.js"></script>
+        <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/scrollgress/1.0.0/scrollgress.min.js"></script> -->
+        <script src="{{ site.baseurl }}/assets/js/jquery.scrollgress.min.js"></script>
+        <script src="{{ site.baseurl }}/assets/js/init.js"></script>
+        <noscript>
+            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/skel/1.0.0/skel.min.css" />
+            <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
+            <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style-desktop.css" />
+        </noscript>
+        <!--[if lte IE 8]><link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ie/v8.css" /><![endif]-->
+        <link rel="canonical" href="{{ page.url | absolute_url }}">
+        <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+        {% if jekyll.environment == 'production' and site.google_analytics %}
+        {% include google-analytics.html %}
+        {% endif %}
+    </head>
+    {% if page.url == "/" %}
+        <!-- Banner -->
+        <body class="landing">
+            <section id="banner">
+                <h2>Manifesto pela diversidade</h2>
+                <p>Porque todos temos direito às mesmas oportunidades.</p>
+                <ul class="actions">
+                    <li><a href="#" class="button special">Assine</a></li>
+                    <li><a href="#acreditamos" class="button">Leia</a></li>
+                </ul>
+            </section>
+    {% else %}
+        <body class="landing">
+            <section id="banner">
+                <h2> {{ page.title | escape }} </h2>
+            </section>
     {% endif %}
-  </div>
-</header>
+    {% include nav.html %}
+    <!-- Main -->
+    <section id="main" class="container">

@@ -1,12 +1,10 @@
 ---
 layout: page
-title:  "Princípios"
+title:  "Princípios do manifesto pela diversidade"
 permalink: "/principios/"
 ---
 
-# Princípios do manifesto pela diversidade
-
-Os seguintes princípios guiam nosso manifesto e são parte integrante dele.
+## Os seguintes princípios guiam nosso manifesto e são parte integrante dele.
 
 * Não toleraremos qualquer incitação ao ódio, desrespeito, injustiça, violência física, verbal ou emocional, linguagem ou conduta ofensivas;
 * Nenhuma expressão individual pode ser motivo para discriminação, entre elas (mas não limitado a):

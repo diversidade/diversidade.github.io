@@ -1,9 +1,7 @@
 ---
 layout: page
-title:  "Apoio a Eventos"
+title:  "Como seu evento pode apoiar o manifesto"
 permalink: "/apoio-evento/"
 ---
 
-# Como seu evento pode apoiar o manifesto pela diversidade
-
-Em desenvolvimento.
+## Em desenvolvimento.

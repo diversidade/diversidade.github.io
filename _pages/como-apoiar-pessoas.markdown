@@ -1,9 +1,7 @@
 ---
 layout: page
-title: "Como apoiar"
+title: "Como apoiar quem sofreu abuso"
 permalink: "/como-apoiar-pessoas/"
 ---
 
-# Como apoiar quem sofreu abuso
-
-Em desenvolvimento.
+## Em desenvolvimento.

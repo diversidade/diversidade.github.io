@@ -1,9 +1,7 @@
 ---
 layout: page
-title:  "Exija do Evento"
+title:  "O que exigir da organização de um evento que você está palestrando"
 permalink: "/exija-do-evento/"
 ---
 
-# O que exigir da organização de um evento que você está palestrando
-
-Em desenvolvimento.
+## Em desenvolvimento.

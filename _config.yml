@@ -44,7 +44,7 @@ plugins:
 #   - vendor/ruby/
 
 include: ["_pages"]
-header_pages:
-  - _pages/principios.markdown
-  - _pages/motivacoes.markdown
-  - _pages/como-apoiar-pessoas.markdown
+sass:
+    sass_dir: assets/css
+
+google_analytics: UA-106386190-1
