@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Como apoiar Pessoas"
+title: "Como apoiar"
 permalink: "/como-apoiar-pessoas/"
 ---
 
