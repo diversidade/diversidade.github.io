@@ -31,6 +31,7 @@
         border-bottom: dotted 1px;
         color: $color-accent2-bg;
         text-decoration: none;
+        font-weight: 700;
 
         &:hover {
             border-bottom-color: transparent;
@@ -200,6 +201,7 @@
 
             h2 {
                 margin: 0;
+                color: $color-header-fg-purple;
             }
 
             p {
@@ -877,12 +879,13 @@
         }
 
         &.alt {
-            background-color: transparent;
+            background-color: $color-header-button;
             box-shadow: inset 0 0 0 2px $color-border;
-            color: $color-fg;
+            color: $color-header-fg-green;
 
             &:hover {
                 background-color: $color-border-bg;
+                color: $color-header-fg-purple;
             }
 
             &:active {
