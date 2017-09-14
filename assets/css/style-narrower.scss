@@ -12,7 +12,7 @@
 /* Basic */
 
     body, input, select, textarea {
-        font-size: 11pt;
+        font-size: 12px;
     }
 
     h2, h3, h4, h5, h6 {
@@ -94,7 +94,7 @@
             width: 100%;
 
             &:before {
-                background: rgba(192,192,192,0.75);
+                background: $color-header-bg;
                 border-radius: $size-border-radius;
                 color: #fff;
                 content: '\f0c9';
@@ -106,7 +106,7 @@
                 position: absolute;
                 text-align: center;
                 top: 0.5em;
-                width: 3.5em;
+                width: 2.5em;
             }
         }
     }
