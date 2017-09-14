@@ -959,7 +959,7 @@
             top: 0;
 
             a {
-                color: $color-header-fg-bold;
+                color: $color-header-fg-green;
                 font-weight: $font-weight-bold;
                 border: 0;
             }
@@ -1030,9 +1030,9 @@
         input[type="reset"],
         input[type="button"],
         .button {
-            background-color: transparent;
+            background-color: $color-header-button;
             box-shadow: inset 0 0 0 2px $color-header-fg-light;
-            color: $color-header-fg-bold;
+            color: $color-header-fg-green;
 
             &:hover {
                 background-color: transparentize($color-header-fg-light, 0.75);
@@ -1170,7 +1170,7 @@
         background-repeat:		repeat,							no-repeat;
         background-size:		auto,							cover;
         color: #fff;
-        padding: 12em 0 20em 0;
+        padding: 8em 0 13em 0;
         text-align: center;
 
         :last-child {
@@ -1190,6 +1190,8 @@
             line-height: 1em;
             margin: 0 0 0.5em 0;
             padding: 0;
+            font-weight: 700;
+            text-shadow: 1px 1px 1px rgba(4, 8, 12, 0.5);
         }
 
         p {
@@ -1205,9 +1207,10 @@
             box-shadow: inset 0 0 0 2px rgba(255,255,255,0.5);
             color: #fff;
             min-width: 12em;
+            text-transform: uppercase;
 
             &:hover {
-                background-color: rgba(255,255,255,0.1);
+                background-color: rgba(102,255,180,0.4);
             }
 
             &:active {
@@ -1215,8 +1218,8 @@
             }
 
             &.special {
-                background: #fff;
-                color: #666 !important;
+                background: $color-header-button;
+                color: $color-header-fg-green !important;
             }
         }
     }
