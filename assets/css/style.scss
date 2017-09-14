@@ -1261,12 +1261,13 @@
 /* Footer */
 
     #footer {
-        background: #f0f0f0;
+        background: $color-footer-bg;
         padding: 4em 0 6em 0;
         text-align: center;
 
         .icons {
             a {
+                color: $color-footer-fg;
                 @include vendor-property('transition', 'opacity #{$duration-transition} ease-in-out');
                 opacity: 0.35;
 
@@ -1277,7 +1278,7 @@
         }
 
         .copyright {
-            color: $color-fg-light;
+            color: $color-footer-fg;
             font-size: 0.9em;
             line-height: 1em;
             margin: 2em 0 0 0;
@@ -1285,7 +1286,7 @@
             text-align: center;
 
             a {
-                color: inherit;
+                color: $color-footer-fg;
             }
 
             li {
