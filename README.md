@@ -6,7 +6,7 @@ o manifesto pela diversidade na tecnologia.
 
 **Para contribuir**
 
-Para rodar o site localmente tenha [Docker](https://www.docker.com/products/docker-toolbox), e rode na pasta do projeto `docker-compose build`.
+Para rodar o site localmente tenha [Docker](https://www.docker.com), e rode na pasta do projeto `docker-compose up`.
 
 Mande um Pull Request com sua contribuição.
 
